@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/woman_safety_icon"
+                android:id="@+id/img_woman_safety"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/img_woman_safety"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/layout_top">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pink_rectangle_10"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/layout_register_yourself">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="24dp"
+                        android:src="@drawable/ic_woman"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Register Yourself"
+                        android:layout_marginVertical="16dp"
+                        android:fontFamily="@font/spd_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/purple_rectangle_10"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/layout_register_guardian">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="24dp"
+                        android:src="@drawable/ic_guardian"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginVertical="16dp"
+                        android:text="Register Guardian"
+                        android:fontFamily="@font/spd_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/layout_top"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/layout_down">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dark_pink_rectangle_10"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/layout_view_registered">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="24dp"
+                        android:src="@drawable/ic_binoculars"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="View Registered"
+                        android:layout_marginVertical="16dp"
+                        android:fontFamily="@font/spd_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/orange_rectangle_10"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/layout_instructions">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="24dp"
+                        android:src="@drawable/ic_instructions"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginVertical="16dp"
+                        android:text="Instructions"
+                        android:fontFamily="@font/spd_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_down"
+                android:padding="16dp"
+                android:background="@drawable/blue_rectangle_10"
+                android:layout_marginTop="24dp"
+                android:id="@+id/layout_police">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_police"
+                    android:id="@+id/img"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toRightOf="@id/img"
+                    android:text="View Nearest Police Station"
+                    android:fontFamily="@font/spd_semibold"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:id="@+id/tv_police"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/spd_semibold"
+                    android:textSize="16dp"
+                    android:id="@+id/tv_police_station"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

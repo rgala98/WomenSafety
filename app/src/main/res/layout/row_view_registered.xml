@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:paddingTop="16dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_user_shield"
+        android:id="@+id/img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/spd_semibold"
+        android:textSize="16dp"
+        android:text="NAME HERE"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/img"
+        android:id="@+id/tv_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/spd_semibold"
+        android:textSize="16dp"
+        android:text="PHONE HERE"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/img"
+        android:layout_below="@id/tv_name"
+        android:id="@+id/tv_phone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_phone"
+        android:background="#707070"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".RegisterYourself">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_white"
+                android:id="@+id/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/spd_semibold"
+                android:layout_below="@id/back"
+                android:layout_marginTop="16dp"
+                android:textSize="24dp"
+                android:text="Register Yourself"
+                android:id="@+id/tv_heading"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_heading"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_rectangle_10"
+                android:id="@+id/layout_name">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="60dp"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@id/img_user"
+                    android:nestedScrollingEnabled="true"
+                    android:fontFamily="@font/spd_semibold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:paddingHorizontal="16dp"
+                    android:hint="Your Name"
+
+                    android:id="@+id/et_name"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_user"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:id="@+id/img_user"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_name"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/white_rectangle_10"
+                android:id="@+id/layout_phone">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="60dp"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@id/img_phone"
+                    android:nestedScrollingEnabled="true"
+                    android:fontFamily="@font/spd_semibold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:paddingHorizontal="16dp"
+                    android:hint="Your Phone Number"
+                    android:id="@+id/et_phone"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_phone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:id="@+id/img_phone"/>
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_rectangle_10"
+                android:text="SAVE DETAILS"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:layout_below="@id/layout_phone"
+                android:id="@+id/btn_save"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
